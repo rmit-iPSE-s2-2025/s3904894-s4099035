@@ -20,7 +20,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
       if let clientID = FirebaseApp.app()?.options.clientID {
           GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: clientID)
       } else {
-          assertionFailure("Missing FireBase Client ID. Check GoogleService-Info.plit target membership")
+          assertionFailure("Missing FireBase Client ID. Check GoogleService-Info.plist target membership")
       }
     return true
   }
